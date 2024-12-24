@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <!-- Add Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .hero-text {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .login, .signup {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .login-box, .signup-box {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .ele {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .clkbtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section with Navbar -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">UNIVERSITY OF EXCELLENCE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#academics">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a> <!-- Link to login.html -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-5">
+        <div class="hero-text">
+            <h1>HOLA!!</h1>
+            <p>WELCOME TO WORLD OF EXCELLENCIA</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-12">
+                <img src="https://i.pinimg.com/736x/97/e3/86/97e38683e56cd3c299b38cd280f97877.jpg" alt="College Logo"
+                    class="img-fluid rounded mx-auto d-block">
+            </div>
+        </div>
+
+        <!-- Login/Signup Section -->
+        <div class="container">
+            <h1 class="heading">UNIVERSITY OF EXCELLENCIA</h1>
+            <h3 class="title">SIGNUP/LOGIN</h3>
+            <div class="btn">
+                <a href="login.html"><button class="login">Login</button></a> <!-- Link to login.html -->
+                <button class="signup">Signup</button>
+            </div>
+
+            <div class="form-section">
+
+                <!-- Login Box (removed since Login is now a separate page) -->
+                <div class="signup-box">
+                    <input type="text" class="name ele" placeholder="Enter your name">
+                    <input type="email" class="email ele" placeholder="youremail@email.com">
+                    <input type="password" class="password ele" placeholder="password">
+                    <input type="password" class="password ele" placeholder="Confirm password">
+                    <button class="clkbtn">Signup</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 College Name | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
